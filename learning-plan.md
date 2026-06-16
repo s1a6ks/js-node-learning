@@ -2,7 +2,9 @@
 
 ## Goal
 
-Move from confident `C#` backend development to practical `JavaScript`, then `TypeScript`, then `Node.js` backend work with enough understanding to build a real project with a teammate.
+Move into practical `JavaScript`, then `TypeScript`, then `Node.js` backend work with enough understanding to build a real project with a teammate.
+
+The user has previous `C#` backend experience, but some programming basics may be rusty. Because of that, we explain `JavaScript` directly and simply first. `C#` comparisons are used only when they make a concept easier to understand.
 
 ## Why This Plan Exists
 
@@ -27,11 +29,12 @@ We will focus on backend-relevant topics first and skip or delay browser-heavy t
 
 Our workflow:
 
-1. Codex chooses the next topic in the right order for a `C#` developer moving to `Node.js`.
-2. The topic is explained briefly through comparisons with `C#`.
-3. Practice is added only where `JavaScript` behaves differently enough to require it.
-4. If a topic is obvious or maps closely to `C#`, we move faster with minimal practice.
-5. The user can still send an article or excerpt at any time if they want that specific material explained.
+1. Codex chooses the next topic in the right order for moving to `Node.js`.
+2. The topic is explained in simple terms first.
+3. If useful, Codex adds a short comparison with `C#`.
+4. Practice is added where the topic needs real reinforcement.
+5. If a programming basic is rusty, we briefly refresh it before moving on.
+6. The user can still send an article or excerpt at any time if they want that specific material explained.
 
 ## Practice Rules
 
@@ -206,12 +209,14 @@ Lower priority for now:
 
 Most sessions should look like this:
 
-1. Short explanation of the topic.
-2. Comparison to `C#`.
-3. A few key gotchas.
-4. Small practice task when needed.
-5. Quick review of the answer.
-6. Move to the next topic.
+1. Short explanation of the topic in simple language.
+2. Why the topic matters for backend work.
+3. Short `C#` comparison only if it helps.
+4. A few key gotchas.
+5. Small practice task when needed.
+6. Quick review of the answer.
+7. Update the topic tracker.
+8. Move to the next topic.
 
 ## First Topics Queue
 
@@ -409,5 +414,7 @@ If some topics feel obvious because of the user's `C#` background, we can compre
 ## Notes
 
 - We are optimizing for real backend work, not for covering every part of the language.
-- We will move faster on topics that are already intuitive because of the user's `C#` background.
+- We will not assume every programming basic is still fresh.
+- We will move faster only when the topic is actually clear.
 - We will slow down on topics where `JavaScript` has surprising runtime behavior.
+- Detailed JavaScript progress is tracked in `docs/js-topic-tracker.md`.
