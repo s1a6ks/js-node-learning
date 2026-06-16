@@ -113,6 +113,55 @@ user.stack = "Node.js";
 
 ## Next Session
 
-`Session 2`: `null`, `undefined`, type conversion, truthy/falsy, `==` vs `===`.
+`Session 3`: operators, conditionals, loops, and short control-flow refresh.
 
-Це перша тема, де починається справжня специфіка `JavaScript`, тому тут буде більше практики.
+## Session 2: Completed
+
+Дата: `2026-06-16`.
+
+Теми:
+
+- `null`
+- `undefined`
+- `typeof null`
+- truthy/falsy values
+- `==` vs `===`
+- basic type conversion
+- `||` vs `??`
+- optional chaining `?.`
+
+Ключові висновки:
+
+- `undefined` означає, що значення не задане.
+- `null` означає спеціально порожнє значення.
+- `typeof null` повертає `"object"` через історичну особливість мови.
+- `===` безпечніше за `==`, бо не робить неявного перетворення типів.
+- `||` використовує fallback для всіх falsy values.
+- `??` використовує fallback тільки для `null` і `undefined`.
+- `?.` дозволяє безпечно читати поля, якщо проміжне значення може бути `null` або `undefined`.
+
+Фінальна практика користувача:
+
+```js
+const user = {
+  name: "",
+  age: 0,
+  profile: null,
+};
+
+console.log(user.name || "Guest");      // "Guest"
+console.log(user.name ?? "Guest");      // ""
+console.log(user.age || 18);            // 18
+console.log(user.age ?? 18);            // 0
+console.log(user.profile?.city);        // undefined
+console.log(user.profile.city);         // TypeError
+console.log(null == undefined);         // true
+console.log(null === undefined);        // false
+console.log(Boolean("false"));          // true
+console.log(Boolean(""));               // false
+```
+
+Результат:
+
+- `Session 2` завершена.
+- Наступна тема: `Session 3`.
