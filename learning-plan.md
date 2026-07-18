@@ -59,93 +59,278 @@ We use less practice for:
 - basic operators
 - syntax that already maps closely to `C#`
 
-## Learning Stages
+## Unit Roadmap
 
-### Stage 1: JavaScript Core for Backend
+We will keep one normal course flow without splitting each topic into separate `core` and `advanced` passes.
 
-Goal: understand how `JavaScript` behaves at runtime.
+If a topic is large, we can spend several sessions inside the same `unit`, but the goal is still to finish that unit properly before moving on.
+
+The roadmap below is backend-focused.
+
+That means:
+
+- browser-heavy topics are not part of the main route
+- rare or low-value language corners are skipped for now
+- the goal is strong practical `JavaScript` for `TypeScript` and `Node.js`
+
+### Unit 1: JavaScript Basics
+
+Goal: understand the language base and how `JavaScript` code is read and executed.
 
 Topics:
 
 - intro to `JavaScript`
 - code structure
 - `use strict`
-- `let`, `const`, `var`
+- variables: `let`, `const`, `var`
 - primitive types
-- `null` and `undefined`
 - type conversion
 - operators
 - comparisons
-- `if`, ternary operator
+- conditionals
 - logical operators
 - nullish coalescing `??`
 - loops
-- functions
-- function expressions
-- arrow functions
+- `switch`
+- basic language quirks summary
 
-### Stage 2: Data and Object Model
+Tracker coverage:
 
-Goal: become comfortable with the data structures and object behavior used in backend code.
+- topics `1-22`
+
+### Unit 2: Functions
+
+Goal: become comfortable writing and reading functions in normal modern `JavaScript`.
 
 Topics:
 
-- objects
-- object references and copying
+- function declarations
+- function expressions
+- arrow functions
+- parameters and arguments
+- `return`
+- default parameters
+- rest parameters
+- recursion and call stack
+- function object basics
+
+Tracker coverage:
+
+- topics `19-21`, `49-50`, `54`, `59`
+
+### Unit 3: Objects
+
+Goal: understand how objects behave in memory and how object-oriented patterns look in `JavaScript`.
+
+Topics:
+
+- object creation and property access
+- references and copying
+- garbage collection overview
+- object methods
+- `this`
+- constructors and `new`
 - optional chaining `?.`
+- object-to-primitive conversion
+- getters and setters overview
+
+Tracker coverage:
+
+- topics `29-36`, `61`
+
+### Unit 4: Arrays and Iterable Data
+
+Goal: work confidently with collections and data transformation.
+
+Topics:
+
 - arrays
+- array mutation
 - array methods
-- `Map` and `Set`
-- `Object.keys`, `Object.values`, `Object.entries`
-- destructuring
-- rest/spread
+- `for...of`
+- iterables
+- `Map`
+- `Set`
+
+Tracker coverage:
+
+- topics `40-43`
+
+### Unit 5: Strings, Numbers, Dates, and JSON
+
+Goal: handle the most common built-in data formats used in backend work.
+
+Topics:
+
+- primitive wrapper methods
+- numbers
+- strings
+- dates and time
 - JSON methods
 
-### Stage 3: Functions and Execution Model
+Tracker coverage:
 
-Goal: understand the parts of JavaScript that most often surprise developers coming from `C#`.
+- topics `37-39`, `47-48`
+
+### Unit 6: Object Utilities and Data Reshaping
+
+Goal: learn the syntax and helpers used all over modern `JavaScript` codebases.
+
+Topics:
+
+- `Object.keys`
+- `Object.values`
+- `Object.entries`
+- destructuring
+- spread syntax
+
+Tracker coverage:
+
+- topics `45-46`, `50`
+
+### Unit 7: Scope, Closures, and Execution Context
+
+Goal: understand the runtime mental model that often feels unusual compared to `C#`.
 
 Topics:
 
 - scope
 - closures
-- old `var` behavior
+- deeper `var` behavior
 - global object
-- `this`
-- `call`, `apply`, `bind`
-- timers
-- recursion and stack
+- timers: `setTimeout`, `setInterval`
 
-### Stage 4: Error Handling and Async
+Tracker coverage:
 
-Goal: write real backend control flow safely.
+- topics `51-53`, `56`
+
+### Unit 8: Function Context and Invocation Control
+
+Goal: understand how function context works and how it is controlled manually.
 
 Topics:
 
-- `try/catch`
+- deeper `this`
+- `call`
+- `apply`
+- `bind`
+
+Tracker coverage:
+
+- topics `57-59`
+
+### Unit 9: Prototypes and Classes
+
+Goal: understand the object model under the surface and the class syntax built on top of it.
+
+Topics:
+
+- class syntax
+- class inheritance
+- static members
+- private and protected fields
+- `instanceof`
+- prototype inheritance overview
+- built-in prototypes overview
+
+Tracker coverage:
+
+- topics `62`, `64`, `66-69`, `71`
+
+### Unit 10: Error Handling
+
+Goal: write safer code and understand failure paths clearly.
+
+Topics:
+
+- `try...catch`
 - custom errors
-- callbacks at a high level
+- error propagation basics
+
+Tracker coverage:
+
+- topics `73-74`
+
+### Unit 11: Async JavaScript
+
+Goal: understand asynchronous control flow from old to modern patterns.
+
+Topics:
+
+- callbacks
 - promises
-- promise chaining
+- chaining
 - promise error handling
 - `Promise` API
+- promisification
 - microtasks
 - `async/await`
-- event loop basics
 
-### Stage 5: Modules and Project Structure
+Tracker coverage:
 
-Goal: understand how backend code is organized in real `Node.js` projects.
+- topics `75-82`
+
+### Unit 12: Iteration Internals and Advanced Flow
+
+Goal: cover less common but important language mechanisms around iteration.
+
+Topics:
+
+- generators overview
+- async iterators overview
+- async generators overview
+
+Tracker coverage:
+
+- topics `83-84`
+
+### Unit 13: Modules
+
+Goal: understand how `JavaScript` code is split across files and loaded in real projects.
 
 Topics:
 
 - modules introduction
-- `export` and `import`
+- export and import
 - dynamic imports
 - `CommonJS` vs `ESM`
-- environment-based project structure basics
 
-### Stage 6: TypeScript Transition
+Tracker coverage:
+
+- topics `85-87`
+
+### Unit 14: Advanced Language Features
+
+Goal: close the remaining language topics that are useful for completeness and deeper understanding.
+
+Topics:
+
+- `Symbol`
+- regular expressions
+
+Tracker coverage:
+
+- topics `35`, `105`
+
+### Unit 15: Tooling, Quality, and Project Readiness
+
+Goal: finish the `JavaScript` course in a way that prepares us for team development.
+
+Topics:
+
+- code editors
+- developer tools
+- code style
+- comments
+- anti-pattern examples
+- tests
+- polyfills and transpilers
+
+Tracker coverage:
+
+- topics `2-4`, `24-28`
+
+### Unit 16: TypeScript Transition
 
 Goal: move into typed backend development without losing understanding of runtime behavior.
 
@@ -162,9 +347,9 @@ Topics:
 - strict mode
 - DTO-style modeling
 
-### Stage 7: Node.js Backend Foundation
+### Unit 17: Node.js Backend Foundation
 
-Goal: build practical backend services.
+Goal: build practical backend services and prepare for a real team project.
 
 Topics:
 
@@ -181,29 +366,13 @@ Topics:
 
 ## Resource Strategy
 
-We will use the user's JavaScript learning site as a base reference.
+We will use the user's JavaScript learning site as a base reference, but the active learning route is filtered for backend value.
 
-Priority topics from that resource:
+That means:
 
-- fundamentals
-- objects
-- arrays
-- functions
-- closures
-- `this`
-- errors
-- promises
-- `async/await`
-- modules
-
-Lower priority for now:
-
-- `alert`, `prompt`, `confirm`
-- most `DOM` topics
-- browser events
-- browser storage
-- animations
-- web components
+- browser-heavy topics are removed from the main path
+- some rare advanced language topics are postponed or skipped
+- the focus is what gives the strongest return for `Node.js` and `TypeScript`
 
 ## Session Format
 
@@ -218,202 +387,32 @@ Most sessions should look like this:
 7. Update the topic tracker.
 8. Move to the next topic.
 
-## First Topics Queue
+## Order After Current Point
 
-This is the current recommended start order:
+We have already covered most of `Unit 1`, `Unit 2`, and the first practical part of objects and arrays.
 
-1. `let`, `const`, `var`
-2. primitive types
-3. `null` and `undefined`
-4. type conversion
-5. `==` vs `===`
-6. functions
-7. arrow functions
-8. objects
-9. arrays and array methods
-10. destructuring and spread
-11. scope and closures
-12. `this`
-13. promises
-14. `async/await`
-15. modules
+The next units in normal order should be:
 
-## JavaScript Timeline
-
-Below is a short session-based plan only for the `JavaScript` part.
-
-Assumption:
-
-- `2-3` sessions per week
-- each session is about `60-120` minutes
-- small self-study or reading between sessions is optional, but helpful
-
-Estimated total for the `JavaScript` stage:
-
-- `8-10` sessions for solid backend-oriented fundamentals
-- `10-12` sessions if we go slower and add more practice
-
-### Session 1
-
-Focus:
-
-- what `JavaScript` is in the context of `Node.js`
-- code structure
-- `use strict`
-- `let`, `const`, `var`
-- primitive types overview
-
-Outcome:
-
-- understand variable declaration rules
-- understand basic type model
-- see where `JavaScript` differs from `C#`
-
-### Session 2
-
-Focus:
-
-- `null`
-- `undefined`
-- type conversion
-- truthy and falsy values
-- `==` vs `===`
-
-Outcome:
-
-- understand the biggest beginner/runtime pitfalls
-- know which comparisons are safe in backend code
-
-### Session 3
-
-Focus:
-
-- operators
-- conditionals
-- nullish coalescing `??`
-- optional chaining `?.`
-- loops
-
-Outcome:
-
-- confidently read and write control flow
-- distinguish `||` and `??`
-
-### Session 4
-
-Focus:
-
-- function declarations
-- function expressions
-- arrow functions
-- default parameters
-- rest parameters
-
-Outcome:
-
-- understand function syntax used in real backend code
-- see where arrow functions behave differently
-
-### Session 5
-
-Focus:
-
-- objects
-- object references
-- copying objects
-- object methods
-- `this` introduction
-
-Outcome:
-
-- understand how objects actually behave in memory
-- avoid common mistakes with method context
-
-### Session 6
-
-Focus:
-
-- arrays
-- array methods
-- `map`, `filter`, `find`, `some`, `every`, `reduce`
-- destructuring
-- spread syntax
-
-Outcome:
-
-- become comfortable with data transformation patterns common in `Node.js`
-
-### Session 7
-
-Focus:
-
-- scope
-- closures
-- old `var` behavior
-- timers
-- practical closure examples
-
-Outcome:
-
-- understand one of the most important `JavaScript` mental model shifts from `C#`
-
-### Session 8
-
-Focus:
-
-- error handling
-- `try/catch`
-- custom errors
-- JSON basics
-- `Map` and `Set`
-
-Outcome:
-
-- be ready to write safer backend code and work with real data structures
-
-### Session 9
-
-Focus:
-
-- callbacks overview
-- promises
-- promise chaining
-- promise error handling
-- `async/await`
-
-Outcome:
-
-- understand modern async flow in backend code
-
-### Session 10
-
-Focus:
-
-- microtasks and event loop basics
-- modules
-- `import` / `export`
-- `CommonJS` vs `ESM`
-- practical wrap-up
-
-Outcome:
-
-- be ready to move from raw `JavaScript` into `TypeScript` and `Node.js` projects
-
-## Compressed Option
-
-If some topics feel obvious because of the user's `C#` background, we can compress this into about `6-7` sessions:
-
-1. variables, types, `null`/`undefined`, conversion
-2. comparisons, conditionals, loops, `??`, `?.`
-3. functions, arrow functions, rest/default params
-4. objects, arrays, destructuring, spread
-5. scope, closures, `this`
-6. errors, promises, `async/await`
-7. modules and event loop basics
+1. finish `Unit 3: Objects`
+2. finish `Unit 4: Arrays and Iterable Data`
+3. `Unit 6: Object Utilities and Data Reshaping`
+4. `Unit 5: Strings, Numbers, Dates, and JSON`
+5. `Unit 7: Scope, Closures, and Execution Context`
+6. `Unit 8: Function Context and Invocation Control`
+7. `Unit 9: Prototypes and Classes`
+8. `Unit 10: Error Handling`
+9. `Unit 11: Async JavaScript`
+10. `Unit 12: Iteration Internals and Advanced Flow`
+11. `Unit 13: Modules`
+12. `Unit 14: Advanced Language Features`
+13. `Unit 15: Tooling, Quality, and Project Readiness`
+14. `Unit 16: TypeScript Transition`
+15. `Unit 17: Node.js Backend Foundation`
 
 ## Notes
 
-- We are optimizing for real backend work, not for covering every part of the language.
+- We are still optimizing the order for real backend progress, but the tracker remains complete.
+- Browser topics and low-value extras are intentionally not in the main path now.
 - We will not assume every programming basic is still fresh.
 - We will move faster only when the topic is actually clear.
 - We will slow down on topics where `JavaScript` has surprising runtime behavior.

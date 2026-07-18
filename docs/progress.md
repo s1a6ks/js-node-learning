@@ -111,10 +111,6 @@ user.stack = "Node.js";
 - користувач зрозумів, що `const user` забороняє переприсвоїти саму змінну, але не забороняє змінювати властивості об'єкта
 - для простих вправ можна писати код прямо в чаті без окремих файлів
 
-## Next Session
-
-`Session 3`: operators, conditionals, loops, and short control-flow refresh.
-
 ## Session 2: Completed
 
 Дата: `2026-06-16`.
@@ -165,3 +161,108 @@ console.log(Boolean(""));               // false
 
 - `Session 2` завершена.
 - Наступна тема: `Session 3`.
+
+## Session 3: Completed
+
+Дата: `2026-06` continuation across the same learning block.
+
+Теми:
+
+- базові оператори
+- `if / else`
+- ternary operator
+- `for`
+- `continue`
+- `break`
+- `switch`
+- block scope для `let` і `const`
+- чому `var` поводиться інакше
+
+Ключові висновки:
+
+- `break` зупиняє цикл або `switch`.
+- `continue` пропускає поточну ітерацію та йде далі.
+- ternary зручний для коротких умов, але не для великої логіки.
+- `let` і `const` мають block scope.
+- `switch` варто писати обережно через fallthrough.
+
+Результат:
+
+- `Session 3` завершена.
+- Користувач нормально пише цикли та умови руками.
+- Наступна тема: `Session 4`.
+
+## Session 4: Completed
+
+Дата: `2026-06` continuation.
+
+Теми:
+
+- function declaration
+- function expression
+- `return`
+- різниця між `console.log` і `return`
+- default parameters
+- early return
+- базове знайомство зі стрілковими функціями
+
+Ключові висновки:
+
+- функція без `return` повертає `undefined`
+- `return` завершує функцію
+- early return часто робить код чистішим
+- function declaration і expression відрізняються поведінкою при hoisting
+
+Результат:
+
+- `Session 4` завершена.
+- Користувач почав нормально будувати власні функції.
+- Наступна тема: `Session 5`.
+
+## Session 5: Completed
+
+Дата: `2026-07` continuation.
+
+Теми:
+
+- об'єкти
+- масиви
+- доступ до властивостей та елементів
+- вкладені дані
+- `push`, `pop`
+- `includes`, `indexOf`
+- копіювання через посилання
+- shallow copy через spread
+- методи об'єкта
+- базовий `this`
+
+Ключові висновки:
+
+- відсутня властивість або елемент масиву в `JavaScript` часто дає `undefined`, а не помилку
+- об'єкти через `=` не копіюються, а розділяють одне посилання
+- spread робить тільки поверхневу копію
+- `this` залежить від способу виклику функції
+
+Результат:
+
+- `Session 5` по базі завершена.
+- Об'єкти та масиви вже зрозумілі на робочому рівні.
+- `this` розібраний на базовому рівні, глибші кейси винесені далі.
+
+## Current Stage
+
+Зараз ми:
+
+- завершили `Session 1-5`
+- майже закрили `Unit 3: Objects`
+- стоїмо перед `Unit 4: Arrays and Iterable Data`
+
+Найближча наступна тема:
+
+- `for...of`
+- `map`
+- `filter`
+- `find`
+- `some`
+- `every`
+- `reduce`
