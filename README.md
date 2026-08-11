@@ -26,15 +26,19 @@
 
 ## Поточний статус
 
-Ми почали з `JavaScript`.
+Ми рухаємось по `JavaScript` backend-базі.
 
 Пройдено:
 
 - `Session 1`: `use strict`, `let`, `const`, `var`, базові типи, mutable object inside `const`
+- `Session 2`: `null`, `undefined`, truthy/falsy, `==` vs `===`, `||`, `??`, `?.`
+- `Session 3`: оператори, умови, цикли, `switch`
+- `Session 4`: функції, `return`, default parameters, early return, basics of arrow functions
+- `Session 5`: об'єкти, масиви, копіювання за посиланням, shallow copy, методи об'єкта, базовий `this`
 
 Наступна тема:
 
-- `Session 2`: `null`, `undefined`, type conversion, truthy/falsy, `==` vs `===`
+- `Session 6`: `for...of`, `map`, `filter`, `find`, `some`, `every`, `reduce`
 
 ## Головні файли
 
@@ -42,7 +46,7 @@
 - [docs/js-topic-tracker.md](./docs/js-topic-tracker.md) - велика таблиця тем і прогресу
 - [docs/progress.md](./docs/progress.md) - історія пройденого
 - [docs/working-agreement.md](./docs/working-agreement.md) - як ми працюємо
-- [docs/sessions/session-01.md](./docs/sessions/session-01.md) - конспект першої сесії
+- [docs/sessions/session-06.md](./docs/sessions/session-06.md) - поточний конспект по методах масивів
 
 ## Як продовжити з іншого комп'ютера
 
@@ -50,7 +54,7 @@
 2. Відкрити папку в Codex або редакторі.
 3. Прочитати [docs/progress.md](./docs/progress.md).
 4. Відкрити [docs/js-topic-tracker.md](./docs/js-topic-tracker.md).
-5. Продовжити з наступної теми: `Session 2`.
+5. Продовжити з наступної теми: `Session 6`.
 
 ## GitHub
 

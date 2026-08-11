@@ -64,7 +64,7 @@
 | 38 | Типи даних | Числа | Medium | Later | Важливо для нюансів `number` |
 | 39 | Типи даних | Рядки | Medium | Later | Практично потрібно |
 | 40 | Типи даних | Масиви | High | Done | Session 5: базові операції, вкладені дані, `push/pop/includes/indexOf` |
-| 41 | Типи даних | Методи масивів | High | Next | `for...of`, `map`, `filter`, `find`, `reduce` |
+| 41 | Типи даних | Методи масивів | High | In progress | `Session 6`: `for...of`, `map`, `filter`, `find`, `some`, `every`, `reduce` |
 | 42 | Типи даних | Ітеровані об'єкти | Medium | Later | Потрібно для `for...of`, Map/Set |
 | 43 | Типи даних | `Map` та `Set` | High | Later | Корисно в backend |
 | 44 | Типи даних | `WeakMap` та `WeakSet` | Low | Later | Не на старті |
@@ -173,8 +173,9 @@
 
 Зараз:
 
-- завершуємо `Unit 3: Objects`
-- наступна практична тема: `for...of` і `методи масивів`
+- завершили `Unit 3: Objects` на базовому робочому рівні
+- почали `Unit 4: Arrays and Iterable Data`
+- поточна практична тема: `for...of` і `методи масивів`
 
 Далі:
 
