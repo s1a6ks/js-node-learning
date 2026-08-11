@@ -254,11 +254,33 @@ console.log(Boolean(""));               // false
 Зараз ми:
 
 - завершили `Session 1-5`
-- майже закрили `Unit 3: Objects`
-- перейшли до `Unit 4: Arrays and Iterable Data`
+- завершили `Unit 3: Objects` на базовому робочому рівні
+- завершили основний практичний блок `Unit 4: Arrays and Iterable Data`
+- пройшли базовий блок `Unit 6: Object Utilities and Data Reshaping`
+- пройшли базовий блок `Unit 7: Scope, Closures, and Execution Context`
+- пройшли базовий блок `Unit 8: Function Context and Invocation Control`
+- пройшли базовий блок `Unit 9: Prototypes and Classes`
+- пройшли базовий блок `Unit 10: Error Handling`
+- почали `Unit 11: Async JavaScript`
 
 Найближча наступна тема:
 
+- `Unit 11: Async JavaScript`
+- callbacks
+- promises
+- promise chaining
+- promise error handling
+- `Promise` API
+- `async/await`
+- microtasks
+
+## Session 6: Completed
+
+Дата старту: `2026-07-24`.
+Дата завершення: `2026-08-03`.
+
+Теми сесії:
+
 - `for...of`
 - `map`
 - `filter`
@@ -266,28 +288,122 @@ console.log(Boolean(""));               // false
 - `some`
 - `every`
 - `reduce`
+- базове знайомство з `Map`
+- базове знайомство з `Set`
+- `Object.keys`
+- `Object.values`
+- `Object.entries`
+- destructuring
+- spread
 
-## Session 6: Started
+Ключові висновки:
 
-Дата: `2026-07-24`.
-
-Теми поточної сесії:
-
-- `for...of`
-- `map`
-- `filter`
-- `find`
-- `some`
-- `every`
-- `reduce`
-
-Поточний фокус:
-
-- навчитися підбирати правильний метод під конкретну задачу
-- перестати тягнути звичайний `for` у всі випадки
-- звикнути до стилю читання масивів, який часто зустрічається в `Node.js` коді
+- `map` використовується для перетворення кожного елемента в новий масив.
+- `filter` повертає масив елементів, які підходять під умову.
+- `find` повертає перший підходящий елемент або `undefined`.
+- `some` і `every` повертають `boolean`.
+- `reduce` зводить масив до одного значення.
+- `for...of` зручний для простого проходу по значеннях без індексів.
+- `Map` корисний для структури `key -> value`, але не замінює звичайні масиви й об'єкти всюди.
+- `Set` корисний для унікальних значень.
+- `Object.keys`, `Object.values`, `Object.entries` потрібні для обходу й перетворення об'єктів.
+- destructuring дозволяє зручно витягувати значення з об'єктів і масивів.
+- spread зручно використовувати для копіювання та складання нових об'єктів і масивів, але він робить тільки поверхневу копію.
 
 Практика:
 
-- підготовлено файл `session-06-practice.js`
-- після розв'язання зафіксуємо результат і завершимо сесію
+- користувач правильно розв'язав практику по `map`, `filter`, `find`, `some`, `every`, `reduce`
+- окремо підготовлено `unit-06-practice.js` на `Object.keys`, `values`, `entries`, destructuring і spread
+- по `Unit 6` розуміння є, але кілька технічних правок у практичному файлі ще залишились як робочий хвіст
+
+## Next Step
+
+Наступний робочий крок:
+
+- добити `Unit 11: Async JavaScript`
+
+З чого починаємо:
+
+- microtasks
+- порядок виконання `Promise.then` відносно синхронного коду
+- `Promise` vs `setTimeout`
+- коротке закріплення всього `Unit 11`
+
+## Unit 9: Completed on working level
+
+Дата завершення: `2026-08-07`.
+
+Теми, які закрили:
+
+- `prototype`
+- `Object.create`
+- `new`
+- `class`
+- `constructor`
+- `static`
+- `extends`
+- `super`
+- `instanceof`
+- built-in prototypes
+
+Ключові висновки:
+
+- `class` у `JavaScript` це зручний синтаксис поверх прототипів.
+- `new` створює екземпляр і прив'язує `this`.
+- `super()` викликає батьківський конструктор.
+- `static` належить самому класу, а не екземпляру.
+- `instanceof` перевіряє належність об'єкта до ланцюжка прототипів.
+
+Статус:
+
+- достатньо зрозуміло для переходу в `Unit 10`
+- ручні прототипи розуміємо, але в повсякденному коді частіше йдемо через `class`
+
+## Unit 10: Completed on working level
+
+Дата завершення: `2026-08-08`.
+
+Теми, які закрили:
+
+- `try...catch`
+- `throw`
+- custom errors
+- `finally`
+- базова валідація і контроль помилок
+
+Ключові висновки:
+
+- `try...catch` ловить помилки і не дає програмі впасти безконтрольно.
+- `throw` дозволяє кинути власну помилку, коли дані невалідні.
+- custom errors допомагають відрізняти типи проблем.
+- `finally` підходить для cleanup.
+- у backend краще показувати зрозумілі помилки, ніж ховати технічний шум.
+
+Статус:
+
+- достатньо зрозуміло для переходу в `Unit 11`
+- окремі `try...catch` кейси ще можна допрацювати пізніше на практиці
+
+## Unit 11: In progress
+
+Дата старту: `2026-08-08`.
+
+Теми, які вже пройшли:
+
+- callbacks
+- promises
+- promise chaining
+- promise error handling
+- `Promise` API
+- `async/await`
+
+Що лишилось:
+
+- microtasks
+- порядок виконання `then`
+- коротке фінальне закріплення теми
+
+Статус:
+
+- основа вже зрозуміла
+- `Unit 11` ще не закритий повністю

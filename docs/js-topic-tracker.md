@@ -34,7 +34,7 @@
 | 18 | Основи | `switch` | Low | Done | Session 3 |
 | 19 | Основи | Функції | High | Done | Session 4 |
 | 20 | Основи | Функціональні вирази | High | Done | Session 4 |
-| 21 | Основи | Стрілкові функції | High | In progress | Базово побачили синтаксис у Session 4, окремо повернемось у Unit 8 |
+| 21 | Основи | Стрілкові функції | High | In progress | Базово побачили синтаксис, ще окремо повернемось до стилю використання |
 | 22 | Основи | Особливості JavaScript | Medium | Later | Підсумуємо після основ |
 
 ## Code Quality
@@ -55,8 +55,8 @@
 | 29 | Об'єкти | Об'єкти | High | Done | Session 5: база, вкладені об'єкти, масиви в об'єктах |
 | 30 | Об'єкти | Копіювання об'єктів та посилання | High | Done | Розібрали `=` vs shallow copy через spread |
 | 31 | Об'єкти | Збирання сміття | Low | Later | Оглядово |
-| 32 | Об'єкти | Методи об'єкта, `this` | High | In progress | Базу по `this` пройшли, глибші кейси підуть у Unit 8 |
-| 33 | Об'єкти | Конструктори, `new` | Medium | Later | Потрібно розуміти, але без занурення |
+| 32 | Об'єкти | Методи об'єкта, `this` | High | Done | Базу по `this` пройшли, ручне керування через `call/apply/bind` також закрили |
+| 33 | Об'єкти | Конструктори, `new` | Medium | Done | Пройшли в `Unit 9` |
 | 34 | Об'єкти | Optional chaining `?.` | High | Done | Session 2: безпечний доступ до optional fields |
 | 35 | Об'єкти | `Symbol` | Low | Later | Не першочергово |
 | 36 | Об'єкти | Перетворення об'єктів у примітиви | Medium | Later | Корисно для розуміння дивної поведінки |
@@ -64,12 +64,12 @@
 | 38 | Типи даних | Числа | Medium | Later | Важливо для нюансів `number` |
 | 39 | Типи даних | Рядки | Medium | Later | Практично потрібно |
 | 40 | Типи даних | Масиви | High | Done | Session 5: базові операції, вкладені дані, `push/pop/includes/indexOf` |
-| 41 | Типи даних | Методи масивів | High | In progress | `Session 6`: `for...of`, `map`, `filter`, `find`, `some`, `every`, `reduce` |
-| 42 | Типи даних | Ітеровані об'єкти | Medium | Later | Потрібно для `for...of`, Map/Set |
-| 43 | Типи даних | `Map` та `Set` | High | Later | Корисно в backend |
+| 41 | Типи даних | Методи масивів | High | Done | `Session 6`: `for...of`, `map`, `filter`, `find`, `some`, `every`, `reduce` |
+| 42 | Типи даних | Ітеровані об'єкти | Medium | Done | Базово пройшли через `for...of` |
+| 43 | Типи даних | `Map` та `Set` | High | Done | Базове знайомство пройшли, для старту достатньо |
 | 44 | Типи даних | `WeakMap` та `WeakSet` | Low | Later | Не на старті |
-| 45 | Типи даних | `Object.keys`, `values`, `entries` | High | Later | Часто використовується |
-| 46 | Типи даних | Деструктуризація | High | Later | Постійно зустрічається |
+| 45 | Типи даних | `Object.keys`, `values`, `entries` | High | Done | Пройшли в блоці `Unit 6` |
+| 46 | Типи даних | Деструктуризація | High | Done | Пройшли в блоці `Unit 6` |
 | 47 | Типи даних | Дата і час | Medium | Later | Практично важливо, але окремо |
 | 48 | Типи даних | JSON methods | High | Later | Дуже важливо для API |
 
@@ -78,16 +78,16 @@
 | # | Розділ | Тема | Пріоритет | Статус | Нотатка |
 |---|---|---|---|---|---|
 | 49 | Функції | Рекурсія та стек | Medium | Later | Оглядово |
-| 50 | Функції | Rest parameters and spread syntax | High | Later | Часто використовується |
-| 51 | Функції | Scope and closures | High | Later | Одна з головних JS-тем |
-| 52 | Функції | Старе ключове слово `var` | Medium | Done | Базово розібрали в Session 1, повернемось при scope |
-| 53 | Функції | Глобальний об'єкт | Medium | Later | Потрібно для Node/browser різниці |
+| 50 | Функції | Rest parameters and spread syntax | High | In progress | Spread для масивів і об'єктів уже бачили, rest залишився далі |
+| 51 | Функції | Scope and closures | High | Done | Пройшли базу по scope, lexical scope і closure |
+| 52 | Функції | Старе ключове слово `var` | Medium | Done | Розібрали scope, hoisting і різницю з `let` |
+| 53 | Функції | Глобальний об'єкт | Medium | Done | Базово пройшли через `globalThis` |
 | 54 | Функції | Function object, NFE | Low | Later | Не першочергово |
 | 55 | Функції | `new Function` | Low | Skip for now | Для backend-старту не потрібно |
-| 56 | Функції | `setTimeout`, `setInterval` | Medium | Later | Корисно для event loop |
-| 57 | Функції | Decorators, `call`, `apply` | Medium | Later | Оглядово |
-| 58 | Функції | `bind` | High | Later | Важливо разом із `this` |
-| 59 | Функції | Повторення стрілкових функцій | Medium | Later | Після першого блоку функцій |
+| 56 | Функції | `setTimeout`, `setInterval` | Medium | Done | Базово пройшли, до event loop повернемось глибше пізніше |
+| 57 | Функції | Decorators, `call`, `apply` | Medium | Done | `call` і `apply` пройшли на робочому рівні, decorators лишаються later |
+| 58 | Функції | `bind` | High | Done | Пройшли на робочому рівні |
+| 59 | Функції | Повторення стрілкових функцій | Medium | Later | Ще повернемось окремо, коли будемо добивати стиль і нюанси `this` |
 
 ## Prototypes and Classes
 
@@ -95,32 +95,32 @@
 |---|---|---|---|---|---|
 | 60 | Properties | Property flags and descriptors | Low | Later | Оглядово |
 | 61 | Properties | Getters and setters | Medium | Later | Корисно, але не старт |
-| 62 | Prototypes | Prototype inheritance | Medium | Later | Треба розуміти JS модель |
+| 62 | Prototypes | Prototype inheritance | Medium | Done | `prototype`, `Object.create`, ланцюжок прототипів |
 | 63 | Prototypes | `F.prototype` | Low | Later | Пізніше |
 | 64 | Prototypes | Built-in prototypes | Low | Later | Оглядово |
 | 65 | Prototypes | Prototype methods, objects without `__proto__` | Low | Later | Пізніше |
-| 66 | Classes | Class syntax | Medium | Later | Після об'єктів |
-| 67 | Classes | Class inheritance | Medium | Later | Оглядово |
-| 68 | Classes | Static properties and methods | Medium | Later | Знадобиться в TS/Nest |
+| 66 | Classes | Class syntax | Medium | Done | Пройшли в `Unit 9` |
+| 67 | Classes | Class inheritance | Medium | Done | `extends` і `super` |
+| 68 | Classes | Static properties and methods | Medium | Done | Базово пройшли |
 | 69 | Classes | Private/protected properties | Medium | Later | Важливо для TS-переходу |
 | 70 | Classes | Extending built-in classes | Low | Later | Рідко потрібно |
-| 71 | Classes | `instanceof` | Medium | Later | Корисно для errors/classes |
+| 71 | Classes | `instanceof` | Medium | Done | Пройшли в `Unit 9` |
 | 72 | Classes | Mixins | Low | Skip for now | Не потрібно для старту |
 
 ## Errors and Async
 
 | # | Розділ | Тема | Пріоритет | Статус | Нотатка |
 |---|---|---|---|---|---|
-| 73 | Errors | `try...catch` | High | Later | Важливо для backend |
-| 74 | Errors | Custom errors | High | Later | Потрібно для API |
-| 75 | Async | Callbacks | Medium | Later | Оглядово, щоб розуміти історію |
-| 76 | Async | Promises | High | Later | Ключова тема |
-| 77 | Async | Promise chaining | High | Later | Практика обов'язкова |
-| 78 | Async | Promise error handling | High | Later | Практика обов'язкова |
-| 79 | Async | Promise API | High | Later | `all`, `race`, `allSettled` |
+| 73 | Errors | `try...catch` | High | Done | Пройшли в `Unit 10` |
+| 74 | Errors | Custom errors | High | Done | Пройшли в `Unit 10` |
+| 75 | Async | Callbacks | Medium | Done | Оглядово, щоб розуміти історію |
+| 76 | Async | Promises | High | Done | Ключова тема |
+| 77 | Async | Promise chaining | High | Done | Практика обов'язкова |
+| 78 | Async | Promise error handling | High | Done | Практика обов'язкова |
+| 79 | Async | Promise API | High | Done | `all`, `race`, `allSettled` |
 | 80 | Async | Promisification | Medium | Later | Корисно для Node callbacks |
-| 81 | Async | Microtasks | High | Later | Для event loop |
-| 82 | Async | `async/await` | High | Later | Ключова тема |
+| 81 | Async | Microtasks | High | Next | Для event loop |
+| 82 | Async | `async/await` | High | Done | Ключова тема |
 
 ## Iteration and Modules
 
@@ -170,14 +170,27 @@
 - теми `29`, `30`, `34`, `40`
 - тему `32` базово
 - тему `52` частково, на базовому рівні
+- теми `41`, `42`, `43`
+- теми `45`, `46`
+- теми `51`, `53`, `56`
+- тему `32` глибше
+- теми `57`, `58`
+- теми `62`, `66`, `67`, `68`, `71`
+- теми `73`, `74`
+- теми `75`, `76`, `77`, `78`, `79`, `82`
 
 Зараз:
 
 - завершили `Unit 3: Objects` на базовому робочому рівні
-- почали `Unit 4: Arrays and Iterable Data`
-- поточна практична тема: `for...of` і `методи масивів`
+- завершили основний практичний блок `Unit 4: Arrays and Iterable Data`
+- пройшли базовий блок `Unit 6: Object Utilities and Data Reshaping`
+- пройшли базовий блок `Unit 7: Scope, Closures, and Execution Context`
+- пройшли базовий блок `Unit 8: Function Context and Invocation Control`
+- пройшли базовий блок `Unit 9: Prototypes and Classes`
+- пройшли базовий блок `Unit 10: Error Handling`
+- почали `Unit 11: Async JavaScript`
 
 Далі:
 
-- `Unit 4: Arrays and Iterable Data`
-- теми `41`, `42`, `43`
+- `Unit 11: Async JavaScript`
+- теми `81`
