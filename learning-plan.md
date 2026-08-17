@@ -1,419 +1,576 @@
-# JavaScript to Node.js Learning Plan
+# TypeScript Learning Plan
+
+## Основні ресурси
+
+**Основний курс:**  
+[TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+
+**Практика:**  
+[Total TypeScript — Beginner's TypeScript](https://www.totaltypescript.com/tutorials/beginners-typescript)
+
+**Довідник:**  
+[TypeScript Documentation](https://www.typescriptlang.org/docs/)
+
+---
+
+## Правила проходження
+
+- TypeScript вивчається після JavaScript.
+- Основою курсу є TypeScript Handbook.
+- Не потрібно механічно завчати синтаксис. Важливо розуміти систему типів і вміти її застосовувати.
+- Важливі теми закріплюємо практикою.
+- Рідкісні та advanced-фічі не вчимо заради галочки.
+- Постійно порівнюємо TypeScript із JavaScript.
+- Частину тем будемо додатково закріплювати вже під час Node.js/backend розробки.
+- Не намагаємося вивчити весь TypeScript до переходу на Node.js.
+
+---
+
+# Unit 1 — TypeScript Basics
+
+- [ ] Що таке TypeScript
+- [ ] TypeScript як надмножина JavaScript
+- [ ] Static typing vs dynamic typing
+- [ ] Compile-time vs runtime
+- [ ] TypeScript compiler
+- [ ] `.ts` → `.js`
+- [ ] Основний workflow TypeScript
+- [ ] Встановлення TypeScript
+- [ ] `tsc`
+- [ ] `tsconfig.json`
+- [ ] `target`
+- [ ] `module`
+- [ ] `strict`
+
+### Практика
+
+- Створити маленький TS-проєкт.
+- Скомпілювати його в JavaScript.
+- Створити кілька навмисних type errors.
+- Подивитися, що відбувається після компіляції.
+
+---
+
+# Unit 2 — Everyday Types
+
+[Everyday Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
+
+- [ ] `string`
+- [ ] `number`
+- [ ] `boolean`
+- [ ] `null`
+- [ ] `undefined`
+- [ ] Arrays
+- [ ] Objects
+- [ ] Type annotations
+- [ ] Type inference
+- [ ] Optional properties
+- [ ] Union types
+- [ ] Type aliases
+- [ ] Interfaces
+- [ ] Literal types
+- [ ] `readonly`
+- [ ] `any`
+- [ ] `unknown`
+- [ ] `never`
+- [ ] `void`
+- [ ] `enum`
+
+### Особливо розібрати
+
+- [ ] Type inference vs explicit annotation
+- [ ] `any` vs `unknown`
+- [ ] `type` vs `interface`
+
+### Практика
+
+- Типізувати об'єкти.
+- Типізувати масиви.
+- Створити власні `type` та `interface`.
+- Використати unions та optional properties.
+
+---
+
+# Unit 3 — Narrowing
+
+[Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)
+
+- [ ] Що таке narrowing
+- [ ] `typeof`
+- [ ] Truthiness narrowing
+- [ ] Equality narrowing
+- [ ] `in`
+- [ ] `instanceof`
+- [ ] Control flow analysis
+- [ ] Discriminated unions
+- [ ] Type predicates
+- [ ] Custom type guards
+
+### Практика
+
+- Працювати з `string | number`.
+- Працювати з кількома типами об'єктів.
+- Створити власний type guard.
+- Розібрати discriminated union.
 
-## Goal
+---
 
-Move into practical `JavaScript`, then `TypeScript`, then `Node.js` backend work with enough understanding to build a real project with a teammate.
+# Unit 4 — Functions
 
-The user has previous `C#` backend experience, but some programming basics may be rusty. Because of that, we explain `JavaScript` directly and simply first. `C#` comparisons are used only when they make a concept easier to understand.
+[More on Functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
 
-## Why This Plan Exists
+- [ ] Type annotations for parameters
+- [ ] Return types
+- [ ] Function types
+- [ ] Anonymous functions
+- [ ] Contextual typing
+- [ ] Optional parameters
+- [ ] Default parameters
+- [ ] Rest parameters
+- [ ] Call signatures
+- [ ] Construct signatures
+- [ ] Function overloads
+- [ ] Generic functions
 
-This file keeps our shared learning context in one place so we can continue later without rebuilding the plan from scratch.
+### Практика
 
-## Working Principles
+- Типізувати звичайні функції.
+- Типізувати callbacks.
+- Створити функції з optional/default параметрами.
+- Розібрати overloads.
 
-We do not study all of JavaScript just for the sake of it.
+---
 
-We study JavaScript at the level needed to:
+# Unit 5 — Object Types
 
-- understand runtime behavior in `Node.js`
-- avoid common `JavaScript` mistakes
-- feel comfortable moving into `TypeScript`
-- build backend APIs with confidence
+[Object Types](https://www.typescriptlang.org/docs/handbook/2/objects.html)
 
-We will use the user's JavaScript resource as a reference, but we will not follow it blindly from top to bottom.
+- [ ] Object type syntax
+- [ ] Optional properties
+- [ ] `readonly`
+- [ ] Index signatures
+- [ ] Extending object types
+- [ ] Intersection types
+- [ ] Interfaces
+- [ ] Type aliases
+- [ ] Structural typing
+- [ ] Excess property checks
+
+### Особливо
 
-We will focus on backend-relevant topics first and skip or delay browser-heavy topics.
+- [ ] Structural typing
+- [ ] `interface` vs `type`
+- [ ] Index signatures
 
-## How We Work Together
+### Практика
 
-Our workflow:
+- Описати складніші об'єкти.
+- Комбінувати типи.
+- Створити dictionary/index signature.
+- Розібрати structural typing на прикладах.
 
-1. Codex chooses the next topic in the right order for moving to `Node.js`.
-2. The topic is explained in simple terms first.
-3. If useful, Codex adds a short comparison with `C#`.
-4. Practice is added where the topic needs real reinforcement.
-5. If a programming basic is rusty, we briefly refresh it before moving on.
-6. The user can still send an article or excerpt at any time if they want that specific material explained.
+---
 
-## Practice Rules
+# Unit 6 — Generics
 
-We use more practice for:
+[Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)
 
-- `null` vs `undefined`
-- type coercion
-- `==` vs `===`
-- object behavior
-- arrays and array methods
-- `this`
-- closures
-- promises
-- `async/await`
-- modules
-- event loop basics
+- [ ] Що таке generics
+- [ ] Generic functions
+- [ ] Generic types
+- [ ] Generic interfaces
+- [ ] Generic classes
+- [ ] Generic constraints
+- [ ] `keyof`
+- [ ] Using type parameters in constraints
+- [ ] Generic defaults
 
-We use less practice for:
+### Практика
 
-- simple conditionals
-- loops
-- basic operators
-- syntax that already maps closely to `C#`
+- Generic function.
+- Generic array/object helpers.
+- Constraints.
+- Робота з `keyof`.
+- Практичні задачі.
 
-## Unit Roadmap
+---
 
-We will keep one normal course flow without splitting each topic into separate `core` and `advanced` passes.
+# Unit 7 — Keyof, Indexed Access & Type Operators
 
-If a topic is large, we can spend several sessions inside the same `unit`, but the goal is still to finish that unit properly before moving on.
+- [ ] `keyof`
+- [ ] Indexed access types
+- [ ] `typeof` у type position
+- [ ] Conditional types — базове розуміння
+- [ ] Mapped types — базове розуміння
+- [ ] Template literal types — базове розуміння
 
-The roadmap below is backend-focused.
+### Мета
 
-That means:
+Зрозуміти, як TypeScript може працювати з типами програмно.
 
-- browser-heavy topics are not part of the main route
-- rare or low-value language corners are skipped for now
-- the goal is strong practical `JavaScript` for `TypeScript` and `Node.js`
+Не потрібно одразу вчити складний type-level programming.
 
-### Unit 1: JavaScript Basics
+---
 
-Goal: understand the language base and how `JavaScript` code is read and executed.
+# Unit 8 — Utility Types
 
-Topics:
+[Utility Types](https://www.typescriptlang.org/docs/handbook/utility-types.html)
 
-- intro to `JavaScript`
-- code structure
-- `use strict`
-- variables: `let`, `const`, `var`
-- primitive types
-- type conversion
-- operators
-- comparisons
-- conditionals
-- logical operators
-- nullish coalescing `??`
-- loops
-- `switch`
-- basic language quirks summary
+- [ ] `Partial`
+- [ ] `Required`
+- [ ] `Readonly`
+- [ ] `Record`
+- [ ] `Pick`
+- [ ] `Omit`
+- [ ] `Exclude`
+- [ ] `Extract`
+- [ ] `NonNullable`
+- [ ] `Parameters`
+- [ ] `ReturnType`
+- [ ] `InstanceType`
 
-Tracker coverage:
+### Практика
 
-- topics `1-22`
+- Перетворення існуючих типів.
+- Створення DTO-подібних типів.
+- Використання utility types у реальних сценаріях.
 
-### Unit 2: Functions
+---
 
-Goal: become comfortable writing and reading functions in normal modern `JavaScript`.
+# Unit 9 — Classes
 
-Topics:
+[Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html)
 
-- function declarations
-- function expressions
-- arrow functions
-- parameters and arguments
-- `return`
-- default parameters
-- rest parameters
-- recursion and call stack
-- function object basics
+- [ ] Class syntax
+- [ ] Fields
+- [ ] Constructors
+- [ ] Methods
+- [ ] `public`
+- [ ] `private`
+- [ ] `protected`
+- [ ] `readonly`
+- [ ] `static`
+- [ ] Getters / setters
+- [ ] Inheritance
+- [ ] `implements`
+- [ ] Abstract classes
 
-Tracker coverage:
+### Примітка
 
-- topics `19-21`, `49-50`, `54`, `59`
+Не перетворюємо цей блок на окремий курс OOP.
 
-### Unit 3: Objects
+Основи OOP вже знайомі з JavaScript/C#.
 
-Goal: understand how objects behave in memory and how object-oriented patterns look in `JavaScript`.
+Мета — зрозуміти, як TypeScript типізує класи та яку роль вони можуть відігравати в backend-коді.
 
-Topics:
+---
 
-- object creation and property access
-- references and copying
-- garbage collection overview
-- object methods
-- `this`
-- constructors and `new`
-- optional chaining `?.`
-- object-to-primitive conversion
-- getters and setters overview
+# Unit 10 — Modules
 
-Tracker coverage:
+[Modules](https://www.typescriptlang.org/docs/handbook/2/modules.html)
 
-- topics `29-36`, `61`
+- [ ] `import`
+- [ ] `export`
+- [ ] Default exports
+- [ ] Named exports
+- [ ] Type-only imports
+- [ ] Type-only exports
+- [ ] Module resolution
+- [ ] CommonJS vs ES Modules
+- [ ] `module` у `tsconfig`
 
-### Unit 4: Arrays and Iterable Data
+### Особливо
 
-Goal: work confidently with collections and data transformation.
+- [ ] `import type`
+- [ ] TS modules vs runtime modules
 
-Topics:
+Цей блок пов'язує TypeScript із модульною системою JavaScript, яку вже проходили.
 
-- arrays
-- array mutation
-- array methods
-- `for...of`
-- iterables
-- `Map`
-- `Set`
+---
 
-Tracker coverage:
+# Unit 11 — Type Manipulation
 
-- topics `40-43`
+- [ ] Conditional types
+- [ ] `infer`
+- [ ] Mapped types
+- [ ] Template literal types
+- [ ] Recursive types — ознайомлення
+- [ ] Combining type operators
 
-### Unit 5: Strings, Numbers, Dates, and JSON
+### Мета
 
-Goal: handle the most common built-in data formats used in backend work.
+Розуміти складний type-level код і вміти його читати.
 
-Topics:
+Не потрібно ставати type-level програмістом.
 
-- primitive wrapper methods
-- numbers
-- strings
-- dates and time
-- JSON methods
+Практику даємо лише там, де вона має реальну користь.
 
-Tracker coverage:
+---
 
-- topics `37-39`, `47-48`
+# Unit 12 — Async TypeScript
 
-### Unit 6: Object Utilities and Data Reshaping
+- [ ] `Promise<T>`
+- [ ] Async functions
+- [ ] Return types of async functions
+- [ ] Generic promises
+- [ ] Typed API responses
+- [ ] `Promise.all`
+- [ ] Error handling in async code
 
-Goal: learn the syntax and helpers used all over modern `JavaScript` codebases.
+Особливо важливо розуміти:
 
-Topics:
+`User`
 
-- `Object.keys`
-- `Object.values`
-- `Object.entries`
-- destructuring
-- spread syntax
+і
 
-Tracker coverage:
+`Promise<User>`
 
-- topics `45-46`, `50`
+Цей блок безпосередньо знадобиться в Node.js.
 
-### Unit 7: Scope, Closures, and Execution Context
+---
 
-Goal: understand the runtime mental model that often feels unusual compared to `C#`.
+# Unit 13 — Error Handling
 
-Topics:
+- [ ] `try/catch`
+- [ ] `unknown` у catch
+- [ ] Custom error types
+- [ ] Error narrowing
+- [ ] Safe error handling
+- [ ] Runtime errors vs TypeScript errors
 
-- scope
-- closures
-- deeper `var` behavior
-- global object
-- timers: `setTimeout`, `setInterval`
+### Особливо
 
-Tracker coverage:
+- [ ] Чому `catch (error)` не можна бездумно вважати `Error`.
+- [ ] Як безпечно працювати з невідомою помилкою.
 
-- topics `51-53`, `56`
+---
 
-### Unit 8: Function Context and Invocation Control
+# Unit 14 — External Data & Runtime Validation
 
-Goal: understand how function context works and how it is controlled manually.
+Це міст між TypeScript і backend.
 
-Topics:
+- [ ] TypeScript types vs runtime data
+- [ ] JSON
+- [ ] HTTP responses
+- [ ] External APIs
+- [ ] `unknown`
+- [ ] Runtime validation
+- [ ] Schema validation
+- [ ] Zod — базове ознайомлення
 
-- deeper `this`
-- `call`
-- `apply`
-- `bind`
+### Ключова концепція
 
-Tracker coverage:
+TypeScript:
 
-- topics `57-59`
+`→` перевіряє код під час розробки.
 
-### Unit 9: Prototypes and Classes
+Runtime validation:
 
-Goal: understand the object model under the surface and the class syntax built on top of it.
+`→` перевіряє реальні дані під час виконання.
 
-Topics:
+### Практика
 
-- class syntax
-- class inheritance
-- static members
-- private and protected fields
-- `instanceof`
-- prototype inheritance overview
-- built-in prototypes overview
+- Отримати `unknown`.
+- Безпечно перевірити його.
+- Описати runtime schema.
+- Перетворити валідовані дані на типізовані дані.
 
-Tracker coverage:
+---
 
-- topics `62`, `64`, `66-69`, `71`
+# Unit 15 — Declaration Files & Type Definitions
 
-### Unit 10: Error Handling
+- [ ] `.d.ts`
+- [ ] Declaration files
+- [ ] `@types/*`
+- [ ] Typing JavaScript libraries
+- [ ] `declare`
+- [ ] Ambient declarations
+- [ ] `@types/node`
 
-Goal: write safer code and understand failure paths clearly.
+### Мета
 
-Topics:
+Розуміти, звідки TypeScript отримує типи бібліотек, які ми встановлюємо через npm.
 
-- `try...catch`
-- custom errors
-- error propagation basics
+---
 
-Tracker coverage:
+# Unit 16 — TypeScript Project Configuration
 
-- topics `73-74`
+[TSConfig Reference](https://www.typescriptlang.org/tsconfig/)
 
-### Unit 11: Async JavaScript
+- [ ] `tsconfig.json`
+- [ ] `compilerOptions`
+- [ ] `target`
+- [ ] `module`
+- [ ] `moduleResolution`
+- [ ] `strict`
+- [ ] `noImplicitAny`
+- [ ] `strictNullChecks`
+- [ ] `esModuleInterop`
+- [ ] `allowJs`
+- [ ] `rootDir`
+- [ ] `outDir`
+- [ ] `include`
+- [ ] `exclude`
+- [ ] Source maps
+- [ ] Build vs development workflow
 
-Goal: understand asynchronous control flow from old to modern patterns.
+### Практика
 
-Topics:
+Створити нормальний TypeScript project:
 
-- callbacks
-- promises
-- chaining
-- promise error handling
-- `Promise` API
-- promisification
-- microtasks
-- `async/await`
+```text
+project/
+├── src/
+│   └── index.ts
+├── dist/
+├── package.json
+└── tsconfig.json
+Налаштувати:
+.ts
+ ↓
+tsc
+ ↓
+dist/
+ ↓
+.js
+Unit 17 — TypeScript + npm
 
-Tracker coverage:
+TypeScript installation
 
-- topics `75-82`
+Local vs global installation
 
-### Unit 12: Iteration Internals and Advanced Flow
+typescript
 
-Goal: cover less common but important language mechanisms around iteration.
+tsc
 
-Topics:
+npm scripts
 
-- generators overview
-- async iterators overview
-- async generators overview
+@types/node
 
-Tracker coverage:
+TypeScript dependencies
 
-- topics `83-84`
+Development dependencies
 
-### Unit 13: Modules
+Build scripts
 
-Goal: understand how `JavaScript` code is split across files and loaded in real projects.
+Running compiled code
+Мета
+Підготувати структуру, яку потім використаємо для Node.js.
+Unit 18 — TypeScript Patterns for Backend
+Це вже не чистий Handbook, а практичний міст до Node.js.
 
-Topics:
+DTO concept
 
-- modules introduction
-- export and import
-- dynamic imports
-- `CommonJS` vs `ESM`
+Service types
 
-Tracker coverage:
+Repository types
 
-- topics `85-87`
+API response types
 
-### Unit 14: Advanced Language Features
+Request/response typing
 
-Goal: close the remaining language topics that are useful for completeness and deeper understanding.
+Generic repository concepts
 
-Topics:
+Error types
 
-- `Symbol`
-- regular expressions
+Configuration typing
 
-Tracker coverage:
+Environment variables
 
-- topics `35`, `105`
+Dependency typing
+Мета
+Побачити, як TypeScript використовується не в абстрактних задачах, а в backend-коді.
+Unit 19 — TypeScript Review
+Повторюємо ключові концепції:
 
-### Unit 15: Tooling, Quality, and Project Readiness
+Type inference
 
-Goal: finish the `JavaScript` course in a way that prepares us for team development.
+Type annotations
 
-Topics:
+type
 
-- code editors
-- developer tools
-- code style
-- comments
-- anti-pattern examples
-- tests
-- polyfills and transpilers
+interface
 
-Tracker coverage:
+Union
 
-- topics `2-4`, `24-28`
+Intersection
 
-### Unit 16: TypeScript Transition
+Literal types
 
-Goal: move into typed backend development without losing understanding of runtime behavior.
+Narrowing
 
-Topics:
+Type guards
 
-- basic `TypeScript` types
-- typing functions
-- interfaces
-- type aliases
-- unions
-- generics
-- narrowing
-- utility types
-- strict mode
-- DTO-style modeling
+Generics
 
-### Unit 17: Node.js Backend Foundation
+keyof
 
-Goal: build practical backend services and prepare for a real team project.
+Utility types
 
-Topics:
+Classes
 
-- what `Node.js` is
-- `npm`
-- project structure
-- environment variables
-- HTTP basics
-- routing
-- middleware
-- validation
-- error handling
-- CRUD API design
+Modules
 
-## Resource Strategy
+Promise<T>
 
-We will use the user's JavaScript learning site as a base reference, but the active learning route is filtered for backend value.
+unknown
 
-That means:
+Runtime validation
 
-- browser-heavy topics are removed from the main path
-- some rare advanced language topics are postponed or skipped
-- the focus is what gives the strongest return for `Node.js` and `TypeScript`
+tsconfig
+Без зубріння.
+Мета
+Переконатися, що ми можемо читати та писати нормальний TypeScript-код.
+Unit 20 — TypeScript → Node.js
+Фінальний перехід.
 
-## Session Format
+Створити Node.js + TypeScript project
 
-Most sessions should look like this:
+Налаштувати package.json
 
-1. Short explanation of the topic in simple language.
-2. Why the topic matters for backend work.
-3. Short `C#` comparison only if it helps.
-4. A few key gotchas.
-5. Small practice task when needed.
-6. Quick review of the answer.
-7. Update the topic tracker.
-8. Move to the next topic.
+Налаштувати tsconfig
 
-## Order After Current Point
+Node.js types
 
-We have already covered most of `Unit 1`, `Unit 2`, and the first practical part of objects and arrays.
+Environment variables
 
-The next units in normal order should be:
+HTTP server
 
-1. finish `Unit 3: Objects`
-2. finish `Unit 4: Arrays and Iterable Data`
-3. `Unit 6: Object Utilities and Data Reshaping`
-4. `Unit 5: Strings, Numbers, Dates, and JSON`
-5. `Unit 7: Scope, Closures, and Execution Context`
-6. `Unit 8: Function Context and Invocation Control`
-7. `Unit 9: Prototypes and Classes`
-8. `Unit 10: Error Handling`
-9. `Unit 11: Async JavaScript`
-10. `Unit 12: Iteration Internals and Advanced Flow`
-11. `Unit 13: Modules`
-12. `Unit 14: Advanced Language Features`
-13. `Unit 15: Tooling, Quality, and Project Readiness`
-14. `Unit 16: TypeScript Transition`
-15. `Unit 17: Node.js Backend Foundation`
+Express
 
-## Notes
+Typed request/response
 
-- We are still optimizing the order for real backend progress, but the tracker remains complete.
-- Browser topics and low-value extras are intentionally not in the main path now.
-- We will not assume every programming basic is still fresh.
-- We will move faster only when the topic is actually clear.
-- We will slow down on topics where `JavaScript` has surprising runtime behavior.
-- Detailed JavaScript progress is tracked in `docs/js-topic-tracker.md`.
+Routing
+
+Controllers
+
+Services
+
+Validation
+
+Database
+
+Authentication
+Після цього TypeScript foundation вважається завершеним.
+Далі:
+TypeScript
+    ↓
+Node.js runtime
+    ↓
+npm ecosystem
+    ↓
+HTTP
+    ↓
+Express
+    ↓
+REST API
+    ↓
+Database
+    ↓
+Authentication
+    ↓
+Testing
+    ↓
+Architecture
+    ↓
+Real project
